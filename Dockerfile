@@ -2,6 +2,9 @@ FROM ubuntu:20.04
 
 WORKDIR /app
 
+ENV release=$(wget -q https://github.com/Jackett/Jackett/releases/latest -O - | grep "title>Release" | cut -d " " -f 4)
+ENV f=Jackett.Binaries.LinuxAMDx64.tar.gz
+
 RUN apt-get update -y
 RUN apt-get install wget -y
 
