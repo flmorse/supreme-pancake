@@ -2,6 +2,7 @@ FROM ubuntu:20.04
 
 WORKDIR /app
 
+RUN apt-get update
 RUN apt-get install wget -y
 
 RUN wget -q https://github.com/Jackett/Jackett/releases/latest/download/Jackett.Binaries.LinuxAMDx64.tar.gz
