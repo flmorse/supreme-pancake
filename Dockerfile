@@ -10,6 +10,7 @@ RUN release=$(wget -q https://github.com/Jackett/Jackett/releases/latest -O - | 
 RUN tar -xzf Jackett.Binaries.LinuxAMDx64.tar.gz
 RUN rm -f Jackett.Binaries.LinuxAMDx64.tar.gz
 RUN cd Jackett*
+RUN chmod +x install_service_systemd.sh
 RUN ./install_service_systemd.sh
 RUN systemctl status jackett.service
 RUN cd -
