@@ -7,7 +7,10 @@ RUN apt-get install wget -y
 
 RUN wget -q https://github.com/Jackett/Jackett/releases/latest/download/Jackett.Binaries.LinuxAMDx64.tar.gz
 
-RUN tar -xvzf Jackett.Binaries.LinuxAMDx64.tar.gz && cd Jackett
+RUN tar -xvzf Jackett.Binaries.LinuxAMDx64.tar.gz
+
+RUN cd Jackett
+RUN cd Jackett
 
 RUN ls && ls && ls && ls && ls
 
