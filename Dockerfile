@@ -11,4 +11,4 @@ RUN tar -xvzf Jackett.Binaries.LinuxAMDx64.tar.gz
 
 RUN cd Jackett
 
-RUN ./install_service_systemd.sh
+RUN bash install_service_systemd.sh
