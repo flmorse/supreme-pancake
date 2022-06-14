@@ -10,8 +10,5 @@ RUN wget -q https://github.com/Jackett/Jackett/releases/latest/download/Jackett.
 RUN tar -xvzf Jackett.Binaries.LinuxAMDx64.tar.gz
 
 RUN cd Jackett
-RUN cd Jackett
 
-RUN ls && ls && ls && ls && ls
-
-RUN ./install_service_systemd.sh
+RUN ./Jackett/install_service_systemd.sh
